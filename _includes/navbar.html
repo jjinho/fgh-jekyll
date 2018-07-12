@@ -1,0 +1,35 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-md">
+
+    {% if site.lang == "en" %}
+      {% capture nav_home %}/{% endcapture %}
+    {% elsif site.lang == "ko" %}
+      {% capture nav_home %}/{{ site.lang }}{% endcapture %}
+    {% endif %}
+    
+    <a class="navbar-brand" href="{{ nav_home }}">{% t navbar.title %}</a>
+    
+    <button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+    <div class="collapse navbar-collapse ml-auto justify-content-end order-last order-md-0" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            {% if site.lang == "en" %}
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/about">{% t navbar.about %}</a></li>
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/gospel">{% t navbar.gospel %}</a></li>
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/meetings">{% t navbar.meetings %}</a></li>
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/media">{% t navbar.media %}</a></li>
+            {% elsif site.lang == "ko" %}
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/ko/about">{% t navbar.about %}</a></li>
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/ko/gospel">{% t navbar.gospel %}</a></li>
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/ko/meetings">{% t navbar.meetings %}</a></li>
+              <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="/ko/media">{% t navbar.media %}</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    {% if site.lang == "en" %}
+      <a class="navbar-nav navbar-language" href="/ko{{ page.url }}">Ko/한</a>
+    {% elsif site.lang == "ko" %}
+      <a class="navbar-nav navbar-language" href="{{ page.url }}">En/영</a>
+    {% endif %}
+</nav>

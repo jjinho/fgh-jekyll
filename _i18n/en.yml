@@ -1,0 +1,40 @@
+langs:
+  en: English
+  ko: Korean
+  abbreviated:
+    en: En
+    ko: Ko
+navbar:
+  title: Flushing Gospel Hall
+  about: About Us
+  gospel: The Gospel
+  meetings: Meetings
+  media: Media
+  contact: Contact Us
+page:
+  title:
+    home: Home
+    about: About Us
+    gospel: The Gospel
+    meetings: Meetings
+    media: Media
+    contact: Contact Us
+footer:
+  copyright: Copyright &copy; Flushing Gospel Hall 2018
+  contact: 
+    contact: Contact Us
+    get_in_touch: Would you like to get in touch? Please leave us a message.
+    name: Name
+    name_placeholder: Your name (required)
+    email: Email address
+    email_placeholder: Your email address (required)
+    phone: Phone number
+    phone_placeholder: Your phone number (optional)
+    message: Message
+    message_placeholder: Your message (required)
+    privacy: We respect your privacy and will not share your information with third-parties.
+    submit: Submit
+  location:
+    location: Come Visit Us
+    visit: "Our doors are always open. We are located at:"
+    directions: Directions go here 

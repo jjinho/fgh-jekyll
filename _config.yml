@@ -1,0 +1,29 @@
+title: Flushing Gospel Hall
+email: flushing.gospel.hall.ny@gmail.com
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fgh-jekyll-jinho.c9users.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+languages: ['en', 'ko']
+
+exclude_from_localizations: ["javascript", "images", "css", "scripts", "favicon.ico"]
+
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

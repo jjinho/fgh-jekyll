@@ -1,0 +1,29 @@
+<h3>{% t footer.contact.contact %}</h3>
+
+<p>{% t footer.contact.get_in_touch %}</p>
+
+<!-- Need to change the email -->
+<form action="https://formspree.io/flushinggospelhallny@gmail.com" method="POST">
+    <div class="form-group">
+        <label for="contact-name">{% t footer.contact.name %} *</label>
+        <input required name="name" type="text" class="form-control form-control-sm" id="contact-name" aria-describedby="emailHelp" placeholder="{% t footer.contact.name_placeholder %}">
+    </div>
+    <div class="form-group">
+        <label for="contact-email">{% t footer.contact.email %} *</label>
+        <input required name="_replyto" type="email" class="form-control form-control-sm" id="contact-email" aria-describedby="emailHelp" placeholder="{% t footer.contact.email_placeholder %}">
+    </div>
+    <div class="form-group">
+        <label for="contact-phone">{% t footer.contact.phone %}</label>
+        <input name="phone_number" type="phone_number" class="form-control form-control-sm" id="contact-email" aria-describedby="emailHelp" placeholder="{% t footer.contact.phone_placeholder %}">
+    </div>
+    <div class="form-group">
+        <label for="contact-message">{% t footer.contact.message %} *</label>
+        <textarea required name="message" class="form-control form-control-sm" id="contact-message" rows="4" placeholder="{% t footer.contact.message_placeholder %}"></textarea>
+        <small id="contact-name-help" class="form-text text-center">{% t footer.contact.privacy %}</small>
+    </div>
+    <input type="hidden" name="_subject" value="Submission to Flushing Gospel Hall" />
+    <input type="hidden" name="_next" value="http://0.0.0.0:8000">
+    <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-sm btn-light">{% t footer.contact.submit %}</button>
+    </div>
+</form>
