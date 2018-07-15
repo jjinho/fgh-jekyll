@@ -9,11 +9,16 @@ body {
 
     font-family: 'Open Sans', sans-serif !important;
 }
-.kr {
+.ko {
     font-family: 'Nanum Myeongjo', serif;
 }
 
 h1 {
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+h2 {
     font-weight: bold;
     font-family: 'Nanum Myeongjo', serif;
 }
@@ -45,7 +50,7 @@ h5 {
 
 .table-text {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 }
 

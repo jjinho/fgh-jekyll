@@ -1,19 +1,19 @@
 --- 
-layout: home 
+layout: default 
 # Title should reference the variable in _i18n/[lang].yml 
 title: page.title.home
 
 # Can reference variables in _i18n/[lang].yml 
 ---
     
-    {% include navbar.html %}
-<section style="background: url('assets/img/old_flushing_03_1600_800.png') center center no-repeat scroll;">
-    
+<sectio>
     <div class="container">
         <div class="row">
             <div class="col-md-12 py-2">
                 
-                {% include home_welcome.html %}
+                <br>
+                
+                {% translate_file home_welcome.md %}
                 
             </div>
         </div>
@@ -25,12 +25,12 @@ title: page.title.home
         <div class="row">
             <div class="col-md-6 py-2">
                 
-                {% include home_upcoming.html %}
+                {% translate_file home_upcoming.md %}
                 
             </div>
             <div class="col-md-6 py-2">
                 
-                {% include home_regular_services.html %}
+                {% translate_file home_services.md %}
                 
             </div>
         </div>

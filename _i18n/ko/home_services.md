@@ -1,6 +1,7 @@
-<h3>Regular Services</h3>
+## Regular Services KO ##
 
-<h5>Sunday</h5>
+<h5 class="text-center">Sunday</h5>
+
 <table class="table table-sm table-text">
     <thead align="center">
         <th colspan="2">Lord's Day Services</th>
@@ -39,7 +40,8 @@
 
 <br>
 
-<h5>Wednesday</h5>
+<h5 class="text-center">Wednesday</h5>
+
 <table class="table table-sm table-text">
     <thead align="center">
         <th colspan="2">Week Night Meeting</th>
@@ -58,7 +60,8 @@
 
 <br>
 
-<h5>Saturday</h5>
+<h5 class="text-center">Saturday</h5>
+
 <table class="table table-sm table-text">
     <thead align="center">
         <th colspan="2">Monthly Youth Meeting</th>
