@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://transparent-favicon.info/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">
+        if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.parse==="undefined"){amzn_assoc_utils.parse=(function(){var d,b,a={'"':'"',"\\":"\\","/":"/",b:"\b",f:"\f",n:"\n",r:"\r",t:"\t"},n,l=function(o){throw {name:"SyntaxError",message:o,at:d,text:n};},g=function(o){if(o&&o!==b){l("Expected '"+o+"' instead of '"+b+"'");}b=n.charAt(d);d+=1;return b;},f=function(){var p,o="";if(b==="-"){o="-";g("-");}while(b>="0"&&b<="9"){o+=b;g();}if(b==="."){o+=".";while(g()&&b>="0"&&b<="9"){o+=b;}}if(b==="e"||b==="E"){o+=b;g();if(b==="-"||b==="+"){o+=b;g();}while(b>="0"&&b<="9"){o+=b;g();}}p=+o;if(!isFinite(p)){l("Bad number");}else{return p;}},h=function(){var r,q,p="",o;if(b==='"'){while(g()){if(b==='"'){g();return p;}if(b==="\\"){g();if(b==="u"){o=0;for(q=0;q<4;q+=1){r=parseInt(g(),16);if(!isFinite(r)){break;}o=o*16+r;}p+=String.fromCharCode(o);}else{if(typeof a[b]==="string"){p+=a[b];}else{break;}}}else{p+=b;}}}l("Bad string");},k=function(){while(b&&b<=" "){g();}},c=function(){switch(b){case"t":g("t");g("r");g("u");g("e");return true;case"f":g("f");g("a");g("l");g("s");g("e");return false;case"n":g("n");g("u");g("l");g("l");return null;}l("Unexpected '"+b+"'");},m,j=function(){var o=[];if(b==="["){g("[");k();if(b==="]"){g("]");return o;}while(b){o.push(m());k();if(b==="]"){g("]");return o;}g(",");k();}}l("Bad array");},e=function(){var p,o={};if(b==="{"){g("{");k();if(b==="}"){g("}");return o;}while(b){p=h();k();g(":");if(Object.hasOwnProperty.call(o,p)){l('Duplicate key "'+p+'"');}o[p]=m();k();if(b==="}"){g("}");return o;}g(",");k();}}l("Bad object");};m=function(){k();switch(b){case"{":return e();case"[":return j();case'"':return h();case"-":return f();default:return b>="0"&&b<="9"?f():c();}};return function(q,p){var o;n=q;d=0;b=" ";o=m();k();if(b){l("Syntax error");}return o;};}());}if(typeof amzn_assoc_utils.addCssRules==="undefined"){amzn_assoc_utils.addCssRules=function(g,n){var h=document.createElement("style"),m,e=0,k="";h.appendChild(document.createTextNode(""));document.head.appendChild(h);m=h.sheet;for(e=0,rl=n.length;e<rl;e++){var d=1,l=n[e],b=n[e][0],f="";if(Object.prototype.toString.call(l[1][0])==="[object Array]"){l=l[1];d=0;}for(var c=l.length;d<c;d++){var a=l[d];f+=a[0]+":"+a[1]+(a[2]?" !important":"")+";\n";}if(typeof g==="string"){m.insertRule(g+"{"+b+"{"+f+"}}",m.cssRules.length);}else{m.insertRule(b+"{"+f+"}",m.cssRules.length);}}};}if(typeof amzn_assoc_utils==="undefined"){amzn_assoc_utils={};}if(typeof amzn_assoc_utils.assocRuntimeMaker==="undefined"){amzn_assoc_utils.assocRuntimeMaker=function(l,g,d){var f={},j={},e=[],b,k=function(m){e.push(m);if(window.addEventListener){window.addEventListener("message",m,false);}else{window.attachEvent("onmessage",m);}},c=false,a=false,h=[];j.listen=function(){k(function(n){var m;if(n.origin.indexOf(l)<0&&n.origin.indexOf(g)<0){return;}if(typeof n.data==="string"&&n.data){m=JSON.parse(n.data);if(m.slotNum===d){if(typeof m.op!=="undefined"&&m.op==="getRuntimeData"){n.source.postMessage(JSON.stringify({slotNum:d,rt:f}),"*");}}}});};j.init=function(n,m){if(typeof n==="object"){f=n;c=true;if(typeof m==="undefined"||!m){j.listen();}}};j.destroy=function(){var m=0;c=false;h=[];f={};a=false;for(m=0;m<e.length;m++){window.removeEventListener("message",e[m],false);}e=[];clearTimeout(b);};j.reinit=function(p,m){var o=h,n;j.destroy();j.init(p,m);for(n=0;n<o.length;n++){if(typeof o[n]==="function"){o[n](p);}}};j.append=function(m){var n;for(n in m){if(m.hasOwnProperty(n)){f[n]=m[n];}}};j.retrieveRuntime=function(m,o,n){if(!c){h.push(m);if(!a){k(function(r){var p=0;if(!c&&typeof r.data==="string"&&r.data){try{var q=JSON.parse(r.data);if(q.slotNum===d&&typeof q.rt!=="undefined"){f=q.rt;clearTimeout(b);for(p=0;p<h.length;p++){if(typeof h[p]==="function"){h[p](f);}}c=true;}}catch(r){}}});window.parent.postMessage(JSON.stringify({slotNum:d,op:"getRuntimeData"}),"*");if(typeof o==="number"&&typeof n==="object"){b=setTimeout(function(){f=n;for(i=0;i<h.length;i++){if(typeof h[i]==="function"){h[i](f);}}c=true;},o);}a=true;}}else{if(typeof m==="function"){m(f);}}};j.getValue=function(m){if(f.hasOwnProperty(m)){return f[m];}else{return null;}};return j;};}if(typeof amzn_assoc_utils.assocRuntime!=="object"){amzn_assoc_utils.assocRuntime={};}amzn_assoc_utils.assocRuntime["0"]=amzn_assoc_utils.assocRuntimeMaker("//ws-na.amazon-adsystem.com","//z-na.amazon-adsystem.com","0");searchAcapRunTimeInit=function(d,f){var c,j,g,h,m,l=function(){amzn_assoc_utils.loadRemoteScript("//z-na.amazon-adsystem.com/widgets/q?Operation=SearchBoxJsonP&InstanceId=0&TemplateId=ItemSearchData&ServiceVersion=20070822&MarketPlace=US&jsonp=searchBoxOptions_"+d);},b=function(){amzn_assoc_utils.loadRemoteScript("//z-na.amazon-adsystem.com/widgets/q?Operation=ProductFinderJsonP&InstanceId=0&TemplateId=ItemSearchData&ServiceVersion=20070822&MarketPlace=US&jsonp=productFinderOptions_"+d);},k=function(){amzn_assoc_utils.loadRemoteScript("//ws-na.amazon-adsystem.com/widgets/q?Operation=GetAsinJsonFirstLoad&InstanceId=0&ResponseCount=10&TemplateId=SearchACAP_Ph4&ServiceVersion=20070822&MarketPlace=US&asins=&slotNum="+d+"&CategoryRestriction=");},a=function(){if(typeof c==="undefined"){l();}if(typeof j==="undefined"){b();}if(typeof g==="undefined"&&f){k();}},e=function(){if((!f||typeof g!=="undefined")&&typeof c!=="undefined"&&typeof j!=="undefined"){clearInterval(m);clearInterval(h);amzn_assoc_utils.assocRuntime[d].reinit({aaxRequestId:"",url:document.location.href,trackingId:"transparent-favicon-20",linkid:"",asinJson:g,searchBoxOptions:c,productFinderOptions:j,regionInt:"1",foresterUrlPrefix:"//fls-na.amazon-adsystem.com/1/associates-ads/1/OP/r/json",impressionRecorderPrefix:"//ir-na.amazon-adsystem.com/e/ir",pixelUrl:"http://aax-us-east.amazon-adsystem.com/x/px/QrTxAo32BFOGFcC25JtX6FMAAAFko00rpQEAAAFKAe7CCK8/",clickUrl:"http://aax-us-east.amazon-adsystem.com/x/c/QrTxAo32BFOGFcC25JtX6FMAAAFko00rpQEAAAFKAe7CCK8/",impressionId:"QrTxAo32BFOGFcC25JtX6FMAAAFko00rpQEAAAFKAe7CCK8",impressionToken:"VFGQ9j0Lh3pVlES-KcWHxQ",slotNum:d},true);}};window["searchBoxOptions_"+d]=function(n){if(!n){}else{c=n;}};window["productFinderOptions_"+d]=function(n){if(!n){}else{j=n;}};window["first_load_callback_"+d]=function(n){if(!n){}else{g=n;}};a();m=setInterval(e,500);h=setInterval(a,10000);};
+        searchAcapRunTimeInit("0",  true );
+        (function(){var b="",a="",c="";(function(f,r,n,o){var l=document.getElementById("__mobileAssociatesSearchWidget_adunit_0");if(!l){return;}var m=function(u,v,t){amzn_assoc_utils.assocRuntime["0"].retrieveRuntime(function(w){var x=document.createElement("iframe");x.setAttribute("width",(v+5)+"px");x.setAttribute("height",(t+5)+"px");x.style.border="none";x.src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&Operation="+u;x.src+="&TemplateId=SrchBox&region=US&marketplace=amazon&tracking_id=transparent-favicon-20&auto_complete=true";x.src+="&search_type=search_widget&width=auto&height=auto&link_id=73QGQZLVZSKPBTXB&widgetId="+l.getAttribute("id");x.src+="&theme=light&bg_color=FFFFFF&default_search_category="+w.defaultCategoryValue+"&isresponsive=true";x.src+="&slotNum=0&debug=false&region_int=1&adType=responsive_search_widget";if(n!==""){x.src+="&viewerCountry="+n;}l.appendChild(x);});};var j=function(v,t){var u=document.createElement("iframe");u.setAttribute("width","100%");u.setAttribute("height","80px");u.style.border="none";u.src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&Operation=GetWidgetFrame&OneJS=1&ad_type=responsive_search_widget";u.src+="&region=US&marketplace=amazon&tracking_id=transparent-favicon-20&auto_complete=true&org_reco_count=10&axf_treatment=C";u.src+="&search_type=search_widget&linkid=73QGQZLVZSKPBTXB&width="+v+"&height="+t+"&default_search_category=";u.src+="&default_search_key="+encodeURIComponent("web design")+"&widgetId="+l.getAttribute("id");u.src+="&default_category_html="+encodeURIComponent(b)+"&default_category_value="+a+"&default_category_search="+c;u.src+="&isresponsive=true&theme=light&bg_color=FFFFFF&slotNum=0&debug=false";if(n!==""){u.src+="&viewerCountry="+n;}l.appendChild(u);};var p=function(t){var u=l.getElementsByTagName("iframe");if(u&&u[0]&&u[0].contentWindow){u[0].contentWindow.postMessage(JSON.stringify(t),"*");}};function i(u){do{u=u.parentNode;if(u.style&&u.style.height){var t=parseInt(u.style.height);if(isNaN(t)||t<=0){continue;}return t;}}while(u.parentNode);return 80+(74*2)+24;}amzn_assoc_utils.assocRuntime["0"].retrieveRuntime(function(w){var x="",E=l.getElementsByClassName("__ma-sw-search-term")[0],C=l.getElementsByClassName("__ma-sw-search-category")[0],B,t,z,A,v;E.innerHTML=w.productFinderOptions;C.innerHTML=w.searchBoxOptions;if(navigator.userAgent.indexOf("MSIE")!=-1){var u=l.getElementsByClassName("__ma-sw-search-form")[0];u.innerHTML="<select class='__ma-sw-search-category'>"+w.searchBoxOptions+"</select><select name='select2' class='__ma-sw-search-term'>"+w.productFinderOptions+"</select>";}B=l.getElementsByClassName("__ma-sw-search-term")[0].getElementsByTagName("option");t={};for(var y=0;y<B.length;y++){t[B[y].innerHTML]=B[y].getAttribute("value");}z=l.getElementsByClassName("__ma-sw-search-category")[0].getElementsByTagName("option");A=l.getElementsByClassName("__ma-sw-category-items")[0];v=null;for(var y=0;y<z.length;y++){var D=document.createElement("li");D.innerHTML=z[y].innerHTML;if(y==0){v=D;}D.setAttribute("data-value",z[y].getAttribute("value"));D.setAttribute("data-search",t[z[y].innerHTML]);D.setAttribute("data-index",y);A.appendChild(D);if(t[z[y].innerHTML]==x){amzn_assoc_utils.assocRuntime["0"].append({defaultCategoryHTML:z[y].innerHTML.replace("&amp;","and"),defaultCategoryValue:z[y].getAttribute("value"),defaultCategorySearch:t[z[y].innerHTML]});v=D;}}v.setAttribute("class","current");A.addEventListener("click",function(H){if(H.target&&H.target.nodeName=="LI"){var F=A.getElementsByTagName("li");for(var G=0;G<F.length;G++){F[G].setAttribute("class","");if(F[G]==H.target){F[G].setAttribute("class","current");}}p({operation:"selectCategory",html:H.target.innerHTML,value:H.target.getAttribute("data-value"),search:H.target.getAttribute("data-search")});}},false);amzn_assoc_utils.assocRuntime["0"].listen();});var g=l.clientWidth?l.clientWidth:l.scrollWidth;var s=i(l);if(r!="auto"&&f!="auto"){g=parseInt(f);s=parseInt(r);}if(f!="auto"){l.style.width=(g+5)+"px";}if(f=="auto"&&r=="auto"&&o=="search_box"){s=80;j(g,s);}else{if(g==160&&s==600){j(160,600);}else{if(g==320&&s==50){m("GetSearchBox3",300,50);}else{if(g>=245&&s>=80){j(g,s);}else{if(g>=180&&s>=150){m("GetSearchBox2",180,150);}else{if(g>=120&&s>=90){m("GetSearchBox1",120,90);}else{if(console&&console.log){console.log("There is no sufficient area available to display Contextual Search Widget ("+g+", "+s+")");}}}}}}}var d=l.getElementsByClassName("__ma-sw-autcomplete")[0];d.addEventListener("mouseover",function(u){if(u.target.nodeName=="DIV"&&u.target!=d){var t=d.getElementsByClassName("__ma-sw-suggestion selected")[0];if(t){t.setAttribute("class","__ma-sw-suggestion");}u.target.setAttribute("class","__ma-sw-suggestion selected");}},false);d.addEventListener("click",function(u){if(u.target.nodeName=="DIV"||u.target.nodeName=="SPAN"){var t=d.getElementsByClassName("__ma-sw-suggestion selected")[0];if(t){p({operation:"selectSuggestion",text:t.getAttribute("data-text"),catValue:t.getAttribute("data-cat-value"),catSearch:t.getAttribute("data-cat-search"),catHTML:t.getAttribute("data-cat-html"),clicked:true});}d.style.display="none";}},false);var h=function(t,u){if(t==u){return true;}while(u.parentNode){u=u.parentNode;if(t==u){return true;}}return false;};var d=l.getElementsByClassName("__ma-sw-autcomplete")[0];var k=l.getElementsByClassName("__ma-sw-category-selection")[0];var e=navigator.userAgent;var q=(e.match(/iPad|iPhone|iPod/i))?"touchstart":"click";window.addEventListener(q,function(t){if(t.target){if(d.style.display!="none"&&!h(d,t.target)){d.style.display="none";}if(k.style.display!="none"&&!h(k,t.target)){p({operation:"hideCategoriesInSrchWidget"});}if(q=="touchstart"){p({operation:"loseFocus"});}}});}("auto","auto","US","search_widget"));if(!window.__maSwMainListener){window.__maSwMainListener=function(y){if(!y.data){return;}if(!(y.origin&&y.origin.indexOf("//ws-na.amazon-adsystem.com")>=0)){return;}var C=JSON.parse(y.data);if(!(C&&C.widgetId&&C.operation)){return;}var h=document.getElementById(C.widgetId);if(!h){return;}var t=function(i){h.getElementsByTagName("iframe")[0].contentWindow.postMessage(JSON.stringify(i),"*");};if(C.operation=="showCategory"){h.getElementsByClassName("__ma-sw-category-selection")[0].style.display="block";}else{if(C.operation=="hideCategory"){h.getElementsByClassName("__ma-sw-category-selection")[0].style.display="none";}else{if(C.operation=="resizeAd"){h.getElementsByTagName("iframe")[0].setAttribute("height",(C.height+5)+"px");}else{if(C.operation=="reportLoadComplete"){window["amzn_assoc_client_cb_"+C.slotNum]({type:"onload",data:{}});}else{if(C.operation=="showSuggestion"){var n=h.getElementsByClassName("__ma-sw-autcomplete")[0];n.innerHTML="";var l=h.getElementsByClassName("__ma-sw-category-items")[0];var r=l.getElementsByClassName("current")[0];var p=0;if(C.suggestion){for(var A=0;A<C.suggestion.length&&A<6;A++){var w=document.createElement("div");w.setAttribute("class","__ma-sw-suggestion");w.setAttribute("data-index",p++);w.setAttribute("data-text",C.suggestion[A]);w.setAttribute("data-cat-value",r.getAttribute("data-value"));w.setAttribute("data-cat-search",r.getAttribute("data-search"));w.setAttribute("data-cat-html",r.innerHTML);w.innerHTML=C.suggestion[A];n.appendChild(w);if(document.querySelector&&C.category[A]&&C.category[A].nodes){var m=C.category[A].nodes;for(var x=0;x<m.length;x++){var B=h.querySelector("ul.__ma-sw-category-items > li[data-value="+m[x].alias+"]");if(B){var k=document.createElement("div");k.setAttribute("class","__ma-sw-suggestion");k.setAttribute("data-index",p++);k.setAttribute("data-text",C.suggestion[A]);k.setAttribute("data-cat-value",B.getAttribute("data-value"));k.setAttribute("data-cat-search",B.getAttribute("data-search"));k.setAttribute("data-cat-html",B.innerHTML);k.innerHTML=C.suggestion[A]+'<span class="cat-wrapper"> in '+m[x].name+"</span>";n.appendChild(k);}}}}}n.style.display="block";}else{if(C.operation=="hideSuggestion"){h.getElementsByClassName("__ma-sw-autcomplete")[0].style.display="none";}else{if(C.operation=="selectSuggestion"){var n=h.getElementsByClassName("__ma-sw-autcomplete")[0];if(n.style.display=="none"){return;}var u=n.getElementsByClassName("__ma-sw-suggestion selected")[0];var s=n.getElementsByClassName("__ma-sw-suggestion");if(!s){return;}if(C.key=="DOWN"){if(!u){s[0].setAttribute("class","__ma-sw-suggestion selected");t({operation:"selectSuggestion",text:s[0].getAttribute("data-text"),catValue:s[0].getAttribute("data-cat-value"),catSearch:s[0].getAttribute("data-cat-search"),catHTML:s[0].getAttribute("data-cat-html")});}else{var g=parseInt(u.getAttribute("data-index"));if(g==(s.length-1)){return;}u.setAttribute("class","__ma-sw-suggestion");g++;s[g].setAttribute("class","__ma-sw-suggestion selected");t({operation:"selectSuggestion",text:s[g].getAttribute("data-text"),catValue:s[g].getAttribute("data-cat-value"),catSearch:s[g].getAttribute("data-cat-search"),catHTML:s[g].getAttribute("data-cat-html")});}}else{if(C.key=="UP"){if(!u){return;}var g=parseInt(u.getAttribute("data-index"));u.setAttribute("class","__ma-sw-suggestion");t({operation:"selectSuggestion",text:C.oldValue});g--;if(g>=0){s[g].setAttribute("class","__ma-sw-suggestion selected");t({operation:"selectSuggestion",text:s[g].getAttribute("data-text"),catValue:s[g].getAttribute("data-cat-value"),catSearch:s[g].getAttribute("data-cat-search"),catHTML:s[g].getAttribute("data-cat-html")});}}}}else{if(C.operation=="keyPressCategory"){if(C.key==27){t({operation:"hideCategoriesInSrchWidget"});return;}var l=h.getElementsByClassName("__ma-sw-category-items")[0];var d=l.getElementsByClassName("outline")[0]||l.getElementsByClassName("current")[0];if(C.key==13||C.key==9){if(d){t({operation:"selectCategory",html:d.innerHTML,value:d.getAttribute("data-value"),search:d.getAttribute("data-search")});d.setAttribute("class","current");}else{t({operation:"hideCategoriesInSrchWidget"});}return;}var v=l.getElementsByClassName("current")[0];if(v){v.removeAttribute("class");}var s=l.getElementsByTagName("li");var o=l.getBoundingClientRect();if(d){var q=d.getAttribute("data-index");if(C.key==40){if(q<(s.length-1)){d.removeAttribute("class");q++;d=s[q];d.setAttribute("class","outline");}}else{if(C.key==38){if(q>0){d.removeAttribute("class");q--;d=s[q];d.setAttribute("class","outline");}}}var e=d.getBoundingClientRect();if(e.bottom-o.bottom>0){l.scrollTop+=e.bottom-o.bottom;}else{if(o.top-e.top>0){l.scrollTop-=(o.top-e.top);}}}else{if(!d&&C.key==40){for(var A=0;A<s.length;A++){var e=s[A].getBoundingClientRect();if(e.top-o.top>=0){s[A].setAttribute("class","outline");break;}}}}}else{if(C.operation=="updateCategory"&&document.querySelector){var f=h.querySelector("ul.__ma-sw-category-items > li[data-value="+C.catValue+"]");var z=h.querySelector("ul.__ma-sw-category-items > li.current");if(z&&f){z.setAttribute("class","");f.setAttribute("class","current");}}}}}}}}}}};window.addEventListener("message",window.__maSwMainListener,false);}}());
+     //# sourceURL=dynscript-1.js</script><script type="text/javascript">
+        (function(){
+			var adRoot = document.querySelectorAll("#__mobileAssociatesSearchWidget_adunit_0")[0];
+			if(typeof window.amznassoccsm != "undefined"){
+				//script is already loaded by other ad unit instance on page
+				amznassoccsm.rmN(adRoot,  "QrTxAo32BFOGFcC25JtX6FMAAAFko00rpQEAAAFKAe7CCK8", window, document);
+			} else{
+			    amzn_assoc_utils.loadRemoteScript("http://g-ecx.images-amazon.com/images/G/01/associates/widgets/20070822/js/amznassocview.js", function(){
+			    	if ("//aax-us-east.amazon-adsystem.com" != "") {
+			    		amznassoccsm.host =  "//aax-us-east.amazon-adsystem.com".replace("//","");
+			    	}
+			    	amznassoccsm.rmN(adRoot,  "QrTxAo32BFOGFcC25JtX6FMAAAFko00rpQEAAAFKAe7CCK8", window, document);
+			    });
+			}
+	 	}());
+     //# sourceURL=dynscript-0.js</script>
+<title>Using a wholly transparent favicon.ico to avoid unnecessary 404s in your server log</title>
+<meta name="description" content="Offers a minimal, wholly transparent favicon.ico file for download">
+<style>
+body {font-family:Verdana,Arial,Swiss,Helvetica,Futura,sans-serif;margin-left:5vw}
+p, ul {font-family:Verdana,Arial,Swiss,Helvetica,Futura,sans-serif;font-size:0.8em}
+li {font-family:Verdana,Arial,Swiss,Helvetica,Futura,sans-serif}
+h1 {font-family:Futura,Verdana,Arial,Swiss,Helvetica,sans-serif;font-size:1.5em;color:gray}
+h2 {font-family:Futura,Verdana,Arial,Swiss,Helvetica,sans-serif;font-size:1.2em}
+tt {font-family:monospace}
+.serverlog {font-family:monospace;border:2px solid gray;padding:5px}
+img {border-style:none}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="format-detection" content="telephone=no">
+<link rel="alternate" hreflang="en" href="http://transparent-favicon.info/">
+<link rel="alternate" hreflang="de" href="http://transparentes-favicon.de/">
+</head>
+<body>
+<h1>Using an invisible favicon.ico</h1>
+<p>... to avoid unnecessary 404s in your server log</p>
+<h2>'File not found' (404) for /favicon.ico in web server access and error logs</h2>
+
+<div class="serverlog">80.141.198.62 - - [12/Nov/2006:00:20:55 +0100] "GET /favicon.ico HTTP/1.1" 404 1503 "-" "Mozilla/5.0 (Windows; U; Windows NT 5.0; de; rv:1.8.0.8) Gecko/20061025 Firefox/1.5.0.8"</div>
+
+
+<p>This is a typical server log entry from a small site of mine, for which I had not bothered to make a favicon. This clutters up the error log and also causes unnecessary traffic, as the 1503 bytes of the error page are longer than a minimal favicon would be.</p>
+
+<h2>A minimal solution</h2>
+
+<p>I have made a transparent favicon.ico file using <a href="http://www.pcmag.com/article2/0,1895,1558931,00.asp">IconEdit 32</a></p>
+<p>This icon is</p>
+<ul>
+<li>16 pixel x 16 pixel</li>
+<li>wholly transparent</li>
+<li>in 2-colour format (not that this is <i>visible</i> with transparent pixels, but it cuts down on file size)</li>
+<li>198 bytes long</li>
+</ul>
+
+<p>You won't see this favicon <i>(That's the point.)</i> If you want a visible favicon for display in your browser's bookmarks, tab titles, etc, then you need to read up on favicons starting with the Wikipedia article linked below.</p>
+
+<h2>Download and installation</h2>
+
+<p>Download the file from the following link (in most browsers: right-click and "Save Target As" or something to that effect).</p>
+
+<p style="margin-left:8em"><a href="http://transparent-favicon.info/favicon.ico"><img src="./favicon_files/file.gif" height="16" width="16" alt="favicon.ico file"> favicon.ico file (198 byte) for download</a></p>
+
+<p>Store this file in the web server's root directory (where your site's home page is located too). Note: the name must be <span class="tt">favicon.ico</span> (all lowercase), not <span class="tt">Favicon.ico</span>, <span class="tt">FAVICON.ICO</span>, etc.</p>
+
+<p>With normal (visible) favicons you would also want to include a <strong>&lt;link rel="</strong>... line in the HTML page's header to make sure that your browser knows where the favicon resides. However, with this invisible favicon that you only use to avoid error log entries, you don't need this - if the web browser requests a favicon.ico file without having been told there is one, it will assume the favicon is at the default location at the root.</p>
+
+<p>Some web servers are misconfigured to serve favicons with a wrong MIME type (e.g. <strong>text/plain</strong>). To check on this the easiest way is to use the <a href="http://web-sniffer.net/">Web Sniffer</a> to request our favicon URL (e.g. http://www.example.com/favicon.ico). The answer to your request should have one of the correct types (see the Wikipedia article referenced below for details).</p>
+
+<h2>Further resources</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/Favicon">Wikipedia article on favicons</a> &nbsp;·&nbsp; <a href="http://dmoz.org/Computers/Internet/Web_Design_and_Development/Authoring/Online_Tools/Graphics/Image_Generation/Favicons/">Open Directory category on favicon editors</a></p>
+
+ <script type="text/javascript">
+amzn_assoc_ad_type = "responsive_search_widget";
+amzn_assoc_tracking_id = "transparent-favicon-20";
+amzn_assoc_link_id = "73QGQZLVZSKPBTXB";
+amzn_assoc_marketplace = "amazon";
+amzn_assoc_region = "US";
+amzn_assoc_placement = "";
+amzn_assoc_search_type = "search_widget";
+amzn_assoc_width = "auto";
+amzn_assoc_height = "auto";
+amzn_assoc_default_search_category = "";
+amzn_assoc_default_search_key = "web design";
+amzn_assoc_theme = "light";
+amzn_assoc_bg_color = "FFFFFF";
+</script>
+<script src="./favicon_files/q"></script><div id="amzn_assoc_ad_div_adunit_0">
+	
+    <style type="text/css">
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget, #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget * {
+            margin:0; padding:0; border:0; font-size:12px; font:inherit; vertical-align:middle; font-family:arial,verdana,helvetica,sans-serif; position:relative; color:#333;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget {
+            width: 99%;
+            height: auto;
+            display: inline-block;
+            text-align: left;
+            vertical-align: middle;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection {
+            position:absolute;
+            right: 10px;
+            top: 25px;
+            z-index: 1000;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0,0,0,.15);
+            border-radius: 4px;
+            box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            background-clip: padding-box;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items {
+            display: block;
+            width: 200px;
+            height: 230px;
+            overflow-y: scroll;
+            list-style: none;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items::-webkit-scrollbar-thumb {
+            border-radius: 4px;
+            background-color: rgba(0,0,0,.5);
+            -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items li {
+            cursor: pointer;
+            display: list-item;
+            text-align: left;
+            text-align: -webkit-match-parent;
+            list-style: none;
+            font-size: 13px;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items li:after,
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items li:before {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items li.current {
+            background: #eee;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items li.outline {
+            background: #F8F8F8;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-category-selection ul.__ma-sw-category-items li:hover {
+            color: #262626;
+            background-color: #F8F8F8;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-suggestion-wrapper {
+            width: 99%; position: absolute; z-index: 9999; top: 68px; text-align: left;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-autcomplete {
+            background:#fff;  display:none; width: 100%; height: auto;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0,0,0,.15);
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            background-clip: padding-box;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-autcomplete .__ma-sw-suggestion {
+            padding: 3px 5px;
+            font-size: 12px;
+            color:#333;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-autcomplete .__ma-sw-suggestion .cat-wrapper {
+            color:#a9a9a9;
+            cursor: default;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-autcomplete .__ma-sw-suggestion:last-child {
+            border-radius: 0 0 4px 4px;
+        }
+        #__mobileAssociatesSearchWidget_adunit_0.__mobile-associates-search-widget .__ma-sw-autcomplete .__ma-sw-suggestion.selected {
+            background: #eee;
+            border: none;
+        }
+                    </style>
+
+    <div id="__mobileAssociatesSearchWidget_adunit_0" class="__mobile-associates-search-widget">
+        <div class="__ma-sw-category-selection" style="display: none;">
+            <ul class="__ma-sw-category-items">
+            <li data-value="aps" data-search="All" data-index="0" class="current">Amazon.com</li><li data-value="instant-video" data-search="UnboxVideo" data-index="1">Amazon Instant Video</li><li data-value="apparel" data-search="Apparel" data-index="2">Clothing &amp; Accessories</li><li data-value="appliances" data-search="Appliances" data-index="3">Appliances</li><li data-value="arts-crafts" data-search="ArtsAndCrafts" data-index="4">Arts, Crafts &amp; Sewing</li><li data-value="automotive" data-search="Automotive" data-index="5">Automotive</li><li data-value="baby-products" data-search="Baby" data-index="6">Baby</li><li data-value="beauty" data-search="Beauty" data-index="7">Beauty</li><li data-value="stripbooks" data-search="Books" data-index="8">Books</li><li data-value="collectibles" data-search="Collectibles" data-index="9">Collectible Coins</li><li data-value="photo" data-search="Photo" data-index="10">Camera &amp; Photo</li><li data-value="mobile" data-search="Wireless" data-index="11">Cell Phones &amp; Accessories</li><li data-value="classical" data-search="Classical" data-index="12">Classical Music</li><li data-value="pc-hardware" data-search="PCHardware" data-index="13">Computers</li><li data-value="dvd" data-search="DVD" data-index="14">DVD</li><li data-value="electronics" data-search="Electronics" data-index="15">Electronics</li><li data-value="collectibles" data-search="Collectibles" data-index="16">Entertainment Collectibles</li><li data-value="videogames" data-search="VideoGames" data-index="17">Game Downloads</li><li data-value="gift-cards" data-search="GiftCards" data-index="18">Gift Cards</li><li data-value="grocery" data-search="Grocery" data-index="19">Grocery &amp; Gourmet Food</li><li data-value="garden" data-search="HomeGarden" data-index="20">Home &amp; Garden</li><li data-value="hpc" data-search="HealthPersonalCare" data-index="21">Health &amp; Personal Care</li><li data-value="industrial" data-search="Industrial" data-index="22">Industrial &amp; Scientific</li><li data-value="jewelry" data-search="Jewelry" data-index="23">Jewelry</li><li data-value="digital-text" data-search="KindleStore" data-index="24">Kindle Store</li><li data-value="kitchen" data-search="Kitchen" data-index="25">Kitchen &amp; Housewares</li><li data-value="magazines" data-search="Magazines" data-index="26">Magazine Subscriptions</li><li data-value="misc" data-search="Miscellaneous" data-index="27">Miscellaneous</li><li data-value="digital-music" data-search="MP3Downloads" data-index="28">Digital Music</li><li data-value="popular" data-search="Music" data-index="29">Music</li><li data-value="mi" data-search="MusicalInstruments" data-index="30">Musical Instruments</li><li data-value="office-products" data-search="OfficeProducts" data-index="31">Office Products</li><li data-value="pets" data-search="PetSupplies" data-index="32">Pet Supplies</li><li data-value="lawngarden" data-search="LawnAndGarden" data-index="33">Patio, Lawn &amp; Garden</li><li data-value="shoes" data-search="Shoes" data-index="34">Handbags and Shoes</li><li data-value="software" data-search="Software" data-index="35">Software</li><li data-value="collectibles" data-search="Collectibles" data-index="36">Sports Collectibles</li><li data-value="sporting" data-search="SportingGoods" data-index="37">Sports &amp; Outdoors</li><li data-value="tools" data-search="Tools" data-index="38">Tools &amp; Hardware</li><li data-value="toys-and-games" data-search="Toys" data-index="39">Toys &amp; Games</li><li data-value="vhs" data-search="VHS" data-index="40">VHS</li><li data-value="videogames" data-search="VideoGames" data-index="41">Video Games</li><li data-value="watches" data-search="Watches" data-index="42">Watches</li></ul>
+        </div>
+        <div class="__ma-sw-suggestion-wrapper">
+            <div style="padding: 0 15px; width:auto; border: none">
+                <div class="__ma-sw-autcomplete" style="display: none;">
+                </div>
+            </div>
+        </div>
+        <div style="display: none;">
+            <form class="__ma-sw-search-form">
+                <select class="__ma-sw-search-category"><option selected="" value="aps">Amazon.com</option> <option value="instant-video">Amazon Instant Video</option> <option value="apparel">Clothing &amp; Accessories</option> <option value="appliances">Appliances</option> <option value="arts-crafts">Arts, Crafts &amp; Sewing</option> <option value="automotive">Automotive</option> <option value="baby-products">Baby</option> <option value="beauty">Beauty</option> <option value="stripbooks">Books</option> <option value="collectibles">Collectible Coins</option> <option value="photo">Camera &amp; Photo</option> <option value="mobile">Cell Phones &amp; Accessories</option> <option value="classical">Classical Music</option> <option value="pc-hardware">Computers</option> <option value="dvd">DVD</option> <option value="electronics">Electronics</option> <option value="collectibles">Entertainment Collectibles</option> <option value="videogames">Game Downloads</option> <option value="gift-cards">Gift Cards</option> <option value="grocery">Grocery &amp; Gourmet Food</option> <option value="garden">Home &amp; Garden</option> <option value="hpc">Health &amp; Personal Care</option> <option value="industrial">Industrial &amp; Scientific</option> <option value="jewelry">Jewelry</option> <option value="digital-text">Kindle Store</option> <option value="kitchen">Kitchen &amp; Housewares</option> <option value="magazines">Magazine Subscriptions</option> <option value="misc">Miscellaneous</option> <option value="digital-music">Digital Music</option> <option value="popular">Music</option> <option value="mi">Musical Instruments</option> <option value="office-products">Office Products</option> <option value="pets">Pet Supplies</option> <option value="lawngarden">Patio, Lawn &amp; Garden</option> <option value="shoes">Handbags and Shoes</option> <option value="software">Software</option> <option value="collectibles">Sports Collectibles</option> <option value="sporting">Sports &amp; Outdoors</option> <option value="tools">Tools &amp; Hardware</option> <option value="toys-and-games">Toys &amp; Games</option> <option value="vhs">VHS</option> <option value="videogames">Video Games</option> <option value="watches">Watches</option></select>
+                <select name="select2" class="__ma-sw-search-term"><option value="All">Amazon.com</option><option value="UnboxVideo">Amazon Instant Video</option><option value="Apparel">Clothing &amp; Accessories</option><option value="Appliances">Appliances</option><option value="ArtsAndCrafts">Arts, Crafts &amp; Sewing</option><option value="Automotive">Automotive</option><option value="Baby">Baby</option><option value="Beauty">Beauty</option><option value="Books">Books</option><option value="Collectibles">Collectible Coins</option><option value="Photo">Camera &amp; Photo</option><option value="Wireless">Cell Phones &amp; Accessories</option><option value="Classical">Classical Music</option><option value="PCHardware">Computers</option><option value="DVD">DVD</option><option value="Electronics">Electronics</option><option value="Collectibles">Entertainment Collectibles</option><option value="VideoGames">Game Downloads</option><option value="GiftCards">Gift Cards</option><option value="Grocery">Grocery &amp; Gourmet Food</option><option value="HomeGarden">Home &amp; Garden</option><option value="HealthPersonalCare">Health &amp; Personal Care</option><option value="Industrial">Industrial &amp; Scientific</option><option value="Jewelry">Jewelry</option><option value="KindleStore">Kindle Store</option><option value="Kitchen">Kitchen &amp; Housewares</option><option value="Magazines">Magazine Subscriptions</option><option value="Miscellaneous">Miscellaneous</option><option value="MP3Downloads">Digital Music</option><option value="Music">Music</option><option value="MusicalInstruments">Musical Instruments</option><option value="OfficeProducts">Office Products</option><option value="PetSupplies">Pet Supplies</option><option value="LawnAndGarden">Patio, Lawn &amp; Garden</option><option value="Shoes">Handbags and Shoes</option><option value="Software">Software</option><option value="Collectibles">Sports Collectibles</option><option value="SportingGoods">Sports &amp; Outdoors</option><option value="Tools">Tools &amp; Hardware</option><option value="Toys">Toys &amp; Games</option><option value="VHS">VHS</option><option value="VideoGames">Video Games</option><option value="Watches">Watches</option></select>
+            </form>
+        </div>
+    <iframe width="100%" height="253px" src="./favicon_files/q.html" style="border: none;"></iframe></div>
+        
+    </div>
+
+
+
+<h2>Legal information</h2>
+
+<p>Responsible for this site: Tomas Schild, Lange Furche 31, 72072 Tübingen, Germany, &lt;tomas@schild.net&gt;.<br>
+If something mentioned here should happen to be trademarked, I certainly do not claim to own that trademark.<br>
+© this site Tomas Schild 2006 (this goes for the text of course, not for the favicon - it would be pretty silly to claim copyright for a 16 x 16 pixel <em>transparent</em> image.)</p>
+
+
+
+</body></html>

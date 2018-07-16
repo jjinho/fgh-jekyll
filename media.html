@@ -2,4 +2,66 @@
 layout: page
 title: page.title.media
 ---
-{% translate_file media/media.md %}
+{% assign audio_by_year = site.data.jekyll_audio_list | group_by: "year" %}
+
+<div class="media-year">
+{% for audio in audio_by_year %}
+    <h2>{{ audio.name }}</h2>
+    
+    {% assign audio_by_meeting = audio.items | group_by: "meeting_type" %}
+    
+    {% for audio_meeting in audio_by_meeting %}
+        <div class="media-meeting ml-4">
+            <h3>{{ audio_meeting.name }}</h3>
+            
+            {% assign audio_by_message = audio_meeting.items | group_by: "message_type" %}
+            
+            {% for audio_message in audio_by_message %}
+                <div class="media-message ml-4">
+                    <h5>{{ audio_message.name }}</h5>
+                    <ul>
+                        {% if audio_message %}
+                            {% assign sorted_audio_messages = audio_message.items | sort: "message_series" %}
+                            
+                            {% for message in sorted_audio_messages %}
+                                <li>
+                                    {% if message.message_theme %}
+                                        {% if message.message_series == "00" %}
+                                            {% if message.message_description %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_description }}</a>
+                                            {% else %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }}</a>
+                                            {% endif %}
+                                        {% else %}
+                                            {% if message.message_description %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_description }} - {{ message.message_series }}</a>
+                                            {% else %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_series }}</a>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% else %}
+                                        {% if message.message_series == "00" %}
+                                            {% if message.message_description %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_description }}</a>
+                                            {% else %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }}</a>
+                                            {% endif %}
+                                            
+                                            {% else %}
+                                            {% if message.message_description %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_description }} - {{ message.message_series }}</a>
+                                            {% else %}
+                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_series }}</a>
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+{% endfor %}
+</div>
