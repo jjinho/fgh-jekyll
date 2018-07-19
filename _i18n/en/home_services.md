@@ -1,4 +1,6 @@
-## Regular Services ##
+<h1 class="text-center">Regular Services</h1>
+
+<hr>
 
 <h5 class="text-center">Sunday</h5>
 
@@ -17,7 +19,7 @@
         </tr>
         <tr>
             <th class="w-50">12:00 PM - 1:00 PM</th>
-            <th class="w-50">Ministry Meeting</th>
+            <th class="w-50">Ministry Meeting/Sunday School</th>
         </tr>
         <tr>
             <th class="w-50">1:00 PM - 2:00 PM</th>
@@ -81,6 +83,7 @@
         </tr>
     </tbody>
 </table>
+<div class="text-center"><small>{% t services.footnote %}</small></div>
 
 <br>
 
@@ -107,3 +110,4 @@
         </tr>
     </tbody>
 </table>
+<div class="text-center"><small>{% t services.footnote %}</small></div>

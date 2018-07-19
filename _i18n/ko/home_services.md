@@ -1,109 +1,113 @@
-## Regular Services KO ##
+<h1 class="text-center">플러싱 모임의 정기집회</h1>
 
-<h5 class="text-center">Sunday</h5>
+<hr>
+
+<h5 class="text-center">주일</h5>
 
 <table class="table table-sm table-text">
     <thead align="center">
-        <th colspan="2">Lord's Day Services</th>
+        <th colspan="2">주일 예배</th>
     </thead>
     <tbody>
         <tr>
-            <th class="w-50">10:00 AM - 11:30 AM</th>
-            <th class="w-50">The Lord's Supper (Breaking of Bread)</th>
+            <th class="w-50">오전 10:00 - 오전 11:30</th>
+            <th class="w-50">만찬예배</th>
         </tr>
         <tr>
-            <th class="w-50">11:45 AM - 12:00 PM</th>
-            <th class="w-50">Sunday School Song Time</th>
+            <th class="w-50">오전 11:45 - 오후 12:00</th>
+            <th class="w-50">찬양</th>
         </tr>
         <tr>
-            <th class="w-50">12:00 PM - 1:00 PM</th>
-            <th class="w-50">Ministry Meeting</th>
+            <th class="w-50">오후 12:00 - 오후 1:00</th>
+            <th class="w-50">성경말씀 / 주일학교</th>
         </tr>
         <tr>
-            <th class="w-50">1:00 PM - 2:00 PM</th>
-            <th class="w-50">Lunch</th>
+            <th class="w-50">오후 1:00 - 오후 2:00</th>
+            <th class="w-50">점심시간 (애찬)</th>
         </tr>
         <tr>
-            <th class="w-50">2:00 PM - 2:15 PM</th>
-            <th class="w-50">Prayer Meeting for the Gospel Message</th>
+            <th class="w-50">오후 2:00 - 오후 2:15</th>
+            <th class="w-50">기도집회</th>
         </tr>
         <tr>
-            <th class="w-50">2:15 PM - 3:15 PM</th>
-            <th class="w-50">Gospel Meeting</th>
+            <th class="w-50">오후 2:15 - 오후 3:15</th>
+            <th class="w-50">복음전도 집회</th>
         </tr>
         <tr>
-            <th class="w-50">3:30 PM - 4:30 PM</th>
-            <th class="w-50">Lord's Day Bible Reading</th>
+            <th class="w-50">오후 3:30 - 오후 4:30</th>
+            <th class="w-50">주일 성경봉독</th>
         </tr>
     </tbody>
 </table>
 
 <br>
 
-<h5 class="text-center">Wednesday</h5>
+<h5 class="text-center">수요일</h5>
 
 <table class="table table-sm table-text">
     <thead align="center">
-        <th colspan="2">Week Night Meeting</th>
+        <th colspan="2">주중 저녁집회</th>
     </thead>
     <tbody>
         <tr>
-            <th class="w-50">7:45 PM - 8:30 PM</th>
-            <th class="w-50">Prayer Meeting</th>
+            <th class="w-50">오후 7:45 - 오후 8:30</th>
+            <th class="w-50">정기 기도집회</th>
         </tr>
         <tr>
-            <th class="w-50">8:30 PM - 9:30 PM</th>
-            <th class="w-50">Weekday Bible Reading</th>
+            <th class="w-50">오후 8:30 - 오후 9:30</th>
+            <th class="w-50">주중 성경봉독</th>
         </tr>
     </tbody>
 </table>
 
 <br>
 
-<h5 class="text-center">Saturday</h5>
+<h5 class="text-center">토요일</h5>
 
 <table class="table table-sm table-text">
     <thead align="center">
-        <th colspan="2">Monthly Youth Meeting</th>
+        <th colspan="2">월례 청년집회</th>
     </thead>
     <tbody>
         <tr>
-            <th class="w-50">10:00 AM - 12:00 PM</th>
-            <th class="w-50">Morning Session</th>
+            <th class="w-50">오전 10:00 - 오후 12:00</th>
+            <th class="w-50">오전 성경공부</th>
         </tr>
         <tr>
-            <th class="w-50">12:00 PM - 1:00 PM</th>
-            <th class="w-50">Lunch</th>
+            <th class="w-50">오후 12:00 - 오후 1:00</th>
+            <th class="w-50">점심과 교제</th>
         </tr>
         <tr>
-            <th class="w-50">1:00 PM - 2:00 PM</th>
-            <th class="w-50">Second Session</th>
+            <th class="w-50">오후 1:00 - 오후 2:00</th>
+            <th class="w-50">오후 성경공부</th>
         </tr>
     </tbody>
 </table>
+<div class="text-center"><small>{% t services.footnote %}</small></div>
 
 <br>
 
 <table class="table table-sm table-text">
     <thead align="center">
-        <th colspan="2">Monthly Children's Meeting</th>
+        <th colspan="2">월례 학생집회</th>
     </thead>
     <tbody>
         <tr>
-            <th class="w-50">10:00 AM - 11:00 AM</th>
-            <th class="w-50">Children's Message</th>
+            <th class="w-50">오전 10:00 - 오전 11:00</th>
+            <th class="w-50">학생들을 위한 말씀</th>
         </tr>
         <tr>
-            <th class="w-50">11:00 AM - 12:00 PM</th>
-            <th class="w-50">Memory Verse Review</th>
+            <th class="w-50">오전 11:00 - 오후 12:00</th>
+            <th class="w-50">암송 복습</th>
         </tr>
         <tr>
-            <th class="w-50">12:00 PM - 1:00 PM</th>
-            <th class="w-50">Lunch</th>
+            <th class="w-50">오후 12:00 - 오후 1:00</th>
+            <th class="w-50">점심과 교제</th>
         </tr>
         <tr>
-            <th class="w-50">1:00 PM - 2:00 PM</th>
-            <th class="w-50">Bible Jeopardy!</th>
+            <th class="w-50">오후 1:00 - 오후 2:00</th>
+            <th class="w-50">성경 퀴즈</th>
         </tr>
     </tbody>
 </table>
+<div class="text-center"><small>{% t services.footnote %}</small></div>

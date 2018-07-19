@@ -2,13 +2,19 @@
 layout: page
 title: page.title.media
 ---
-{% assign audio_by_year = site.data.jekyll_audio_list | group_by: "year" %}
+<h1 class="text-center">{% t page.title.media %}</h1>
+
+{% translate_file media/media.md %}
+
+<hr>
+
+{% assign audio_by_year = site.data.fgh_audio_list | group_by: "year" %}
 
 {% assign sorted_audio_by_year = audio_by_year | sort: "year" | reverse %}
 
 <div class="media-year">
 {% for audio in sorted_audio_by_year %}
-    <h2>{{ audio.name }}</h2>
+    <h3>{{ audio.name }}</h3>
     
     {% assign audio_by_meeting = audio.items | group_by: "meeting_type" %}
     
@@ -16,7 +22,7 @@ title: page.title.media
     
     {% for audio_meeting in sorted_audio_by_meeting %}
         <div class="media-meeting ml-4">
-            <h3>{{ audio_meeting.name }}</h3>
+            <h5>{{ audio_meeting.name }}</h5>
             
             {% assign audio_by_message = audio_meeting.items | group_by: "message_type" %}
 
@@ -24,7 +30,7 @@ title: page.title.media
             
             {% for audio_message in sorted_audio_by_message %}
                 <div class="media-message ml-4">
-                    <h5>{{ audio_message.name }}</h5>
+                    <b>{{ audio_message.name }}</b>
                     <ul>
                         {% if audio_message %}
                             {% assign sorted_audio_messages = audio_message.items | sort: "message_series" %}

@@ -1,1 +1,0 @@
-Korean Description of Gospel

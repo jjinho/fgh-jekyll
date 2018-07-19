@@ -11,8 +11,6 @@ title: page.title.home
         <div class="row">
             <div class="col-md-12 py-2">
                 
-                <br>
-                
                 {% translate_file home_welcome.md %}
                 
             </div>
@@ -25,8 +23,14 @@ title: page.title.home
         <div class="row">
             <div class="col-md-6 py-2">
                 
-                {% translate_file home_upcoming.md %}
+                <h1 class="text-center">{% t home.upcoming_events %}</h1>
                 
+                {% for post in site.posts %}
+                    {{ post.title }}
+                    
+                    {{ post.content }}
+                {% endfor %}
+
             </div>
             <div class="col-md-6 py-2">
                 

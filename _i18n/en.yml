@@ -9,16 +9,19 @@ navbar:
   about: About Us
   gospel: The Gospel
   meetings: Meetings
-  media: Media
-  contact: Contact Us
+  media: Recordings
 page:
   title:
-    home: Home
+    home: Flushing Gospel Hall
     about: About Us
     gospel: The Gospel
     meetings: Meetings
-    media: Media
-    contact: Contact Us
+    media: Recordings
+    404: Page Not Found
+home:
+  upcoming_events: Upcoming Events
+services:
+  footnote: See Upcoming Events for date
 footer:
   copyright: Copyright &copy; Flushing Gospel Hall 2018
   contact: 
@@ -32,7 +35,7 @@ footer:
     phone_placeholder: Your phone number (optional)
     message: Message
     message_placeholder: Your message (required)
-    privacy: We respect your privacy and will not share your information with third-parties.
+    privacy: We respect your privacy and will never share your information with third-parties.
     submit: Submit
   location:
     location: Come Visit Us
