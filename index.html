@@ -25,12 +25,160 @@ title: page.title.home
                 
                 <h1 class="text-center">{% t home.upcoming_events %}</h1>
                 
-                {% for post in site.posts %}
-                    {{ post.title }}
+                <hr class="dark">
+                
+                {% assign sorted_events = site.posts | sort: "event_date" %}
+                {% for post in sorted_events %}
+                {% if post.event_date %}
+                    <div class="event-datetime px-2">
+                        {% if site.lang == "en" %}
+                            {% if post.event_date and post.event_date_end %}
+                                {{ post.event_date | date: "%A, %B %-d %Y" }} - {{ post.event_date_end | date: "%A, %B %-d %Y" }}
+                            {% elsif post.event_date %}
+                                {{ post.event_date | date: "%A, %B %-d %Y" }}
+                            {% else %}
+                                TBD
+                            {% endif %}
+                        {% elsif site.lang == "ko" %}
+                            {% if post.event_date and post.event_date_end %}
+                                {{ post.event_date | date: "%Y" }}년
+                                {% assign m = post.event_date | date: "%-m" %}
+                                {% case m %}
+                                    {% when '1' %}1월
+                                    {% when '2' %}2월
+                                    {% when '3' %}3월
+                                    {% when '4' %}4월
+                                    {% when '5' %}5월
+                                    {% when '6' %}6월
+                                    {% when '7' %}7월
+                                    {% when '8' %}8월
+                                    {% when '9' %}9월
+                                    {% when '10' %}10월
+                                    {% when '11' %}11월
+                                    {% when '12' %}12월
+                                {% endcase %}
+                                {{ post.event_date | date: "%-d" }}일
+                                {% assign a = post.event_date | date: "%A" %}
+                                {% case a %}
+                                  {% when 'Sunday' %}(일)
+                                  {% when 'Monday' %}(월)
+                                  {% when 'Tuesday' %}(화)
+                                  {% when 'Wednesday' %}(수)
+                                  {% when 'Thursday' %}(목)
+                                  {% when 'Friday' %}(금)
+                                  {% when 'Saturday' %}(토)
+                                {% endcase %} - 
+                                {{ post.event_date_end | date: "%Y" }}년
+                                {% assign m = post.event_date_end | date: "%-m" %}
+                                {% case m %}
+                                    {% when '1' %}1월
+                                    {% when '2' %}2월
+                                    {% when '3' %}3월
+                                    {% when '4' %}4월
+                                    {% when '5' %}5월
+                                    {% when '6' %}6월
+                                    {% when '7' %}7월
+                                    {% when '8' %}8월
+                                    {% when '9' %}9월
+                                    {% when '10' %}10월
+                                    {% when '11' %}11월
+                                    {% when '12' %}12월
+                                {% endcase %}
+                                {{ post.event_date_end | date: "%-d" }}일
+                                {% assign a = post.event_date_end | date: "%A" %}
+                                {% case a %}
+                                  {% when 'Sunday' %}(일)
+                                  {% when 'Monday' %}(월)
+                                  {% when 'Tuesday' %}(화)
+                                  {% when 'Wednesday' %}(수)
+                                  {% when 'Thursday' %}(목)
+                                  {% when 'Friday' %}(금)
+                                  {% when 'Saturday' %}(토)
+                                {% endcase %}
+                            {% elsif post.event_date %}
+                                {{ post.event_date | date: "%Y" }}년
+                                {% assign m = post.event_date | date: "%-m" %}
+                                {% case m %}
+                                    {% when '1' %}1월
+                                    {% when '2' %}2월
+                                    {% when '3' %}3월
+                                    {% when '4' %}4월
+                                    {% when '5' %}5월
+                                    {% when '6' %}6월
+                                    {% when '7' %}7월
+                                    {% when '8' %}8월
+                                    {% when '9' %}9월
+                                    {% when '10' %}10월
+                                    {% when '11' %}11월
+                                    {% when '12' %}12월
+                                {% endcase %}
+                                {{ post.event_date | date: "%-d" }}일
+                                {% assign a = post.event_date | date: "%A" %}
+                                {% case a %}
+                                  {% when 'Sunday' %}(일)
+                                  {% when 'Monday' %}(월)
+                                  {% when 'Tuesday' %}(화)
+                                  {% when 'Wednesday' %}(수)
+                                  {% when 'Thursday' %}(목)
+                                  {% when 'Friday' %}(금)
+                                  {% when 'Saturday' %}(토)
+                                {% endcase %}
+                            {% else %}
+                                TBD KO
+                            {% endif %}  
+                                
+                       
+                        {% endif %}
+                        {% if post.event_time %}
+                            <br>
+                            {{ post.event_time }}
+                        {% endif %}
+                        {% if post.event_location %}
+                            <br>
+                            {{ post.event_location }}
+                        {% endif %}
+                    </div>
                     
-                    {{ post.content }}
+                    <div class="event-title px-2">
+                        {{ post.event_title }}
+                    </div>
+                    
+                    <div class="event-content px-2">
+                        {{ post.content }}
+                    </div>
+                    
+                    <hr class="event-hr">
+                {% endif %}
                 {% endfor %}
-
+                
+                {% assign sorted_events = site.posts | sort: "event_date" %}
+                
+                {% for post in sorted_events %}
+                {% unless post.event_date %}
+                    <div class="event-datetime px-2">
+                        TBD
+                        {% if post.event_time %}
+                            <br>
+                            {{ post.event_time }}
+                        {% endif %}
+                        {% if post.event_location %}
+                            <br>
+                            {{ post.event_location }}
+                        {% endif %}
+                    </div>
+                    
+                    <div class="event-title px-2">
+                        {{ post.event_title }}
+                    </div>
+                    
+                    <div class="event-content px-2">
+                        {{ post.content }}
+                    </div>
+                    
+                    <hr class="event-hr">
+                {% endunless %}
+                {% endfor %}
+                
             </div>
             <div class="col-md-6 py-2">
                 

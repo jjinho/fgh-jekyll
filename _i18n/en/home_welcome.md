@@ -1,6 +1,6 @@
 <h1 class="text-center">Welcome</h1>
 
-<hr>
+<hr class="dark">
 
 We are an assembly of Christians, living in the borough of Queens in 
 New York City and the surrounding communities, who gather together in 

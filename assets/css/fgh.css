@@ -48,7 +48,7 @@ h5 {
     margin-bottom: 0.5em;
 }
 
-hr {
+hr.dark {
     border: 0;
     height: 1px;
     width: 50%;
@@ -66,7 +66,7 @@ p {
 }
 
 small {
-    font-size: 10px;
+    font-size: 0.6em;
 }
 
 .blockquote {
@@ -87,12 +87,33 @@ small {
 }
 
 .navbar-language {
-    font-size: 12px;
+    font-size: 0.8em;
     font-family: 'Open Sans', sans-serif;
 }
 
+.event-datetime {
+    font-size: 0.8em;
+}
+
+.event-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.event-content {
+    
+}
+
+hr.event-hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(32,32,32, 0.2);
+}
+
 .table-text {
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: 200;
     font-family: 'Open Sans', sans-serif;
 }

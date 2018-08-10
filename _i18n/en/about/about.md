@@ -7,7 +7,7 @@
 </blockquote>
 </center>
 
-<hr>
+<hr class="dark">
 
 <h3>What the Bible Teaches About the Bible</h3>
 - The Bible alone is the inspired Word of God.  The Old Testament was validated by Christ and the New Testament was authorized by Christ as being the Word of God.  There is no subsequent nor other written revelation from God.

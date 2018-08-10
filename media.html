@@ -6,7 +6,7 @@ title: page.title.media
 
 {% translate_file media/media.md %}
 
-<hr>
+<hr class="dark">
 
 {% assign audio_by_year = site.data.fgh_audio_list | group_by: "year" %}
 
@@ -37,33 +37,66 @@ title: page.title.media
                             
                             {% for message in sorted_audio_messages %}
                                 <li>
-                                    {% if message.message_theme %}
-                                        {% if message.message_series == "00" %}
-                                            {% if message.message_description %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_description }}</a>
+                                    {% if site.lang == "en" %}
+                                        {% if message.message_theme %}
+                                            {% if message.message_series == "00" %}
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_description }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }}</a>
+                                                {% endif %}
                                             {% else %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }}</a>
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_description }} - {{ message.message_series }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_series }}</a>
+                                                {% endif %}
                                             {% endif %}
                                         {% else %}
-                                            {% if message.message_description %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_description }} - {{ message.message_series }}</a>
-                                            {% else %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_theme }} - {{ message.message_series }}</a>
+                                            {% if message.message_series == "00" %}
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_description }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }}</a>
+                                                {% endif %}
+                                                
+                                                {% else %}
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_description }} - {{ message.message_series }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_series }}</a>
+                                                {% endif %}
                                             {% endif %}
                                         {% endif %}
-                                    {% else %}
-                                        {% if message.message_series == "00" %}
-                                            {% if message.message_description %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_description }}</a>
+                                    {% elsif site.lang == "ko" %}
+                                        {% if message.message_theme %}
+                                            {% if message.message_series == "00" %}
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_theme }} - {{ message.message_description }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_theme }}</a>
+                                                {% endif %}
                                             {% else %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }}</a>
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_theme }} - {{ message.message_description }} - {{ message.message_series }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_theme }} - {{ message.message_series }}</a>
+                                                {% endif %}
                                             {% endif %}
-                                            
-                                            {% else %}
-                                            {% if message.message_description %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_description }} - {{ message.message_series }}</a>
-                                            {% else %}
-                                                <a href="{{ message.url }}">{{ message.date | date: "%B %-d %Y" }} - {{ message.message_series }}</a>
+                                        {% else %}
+                                            {% if message.message_series == "00" %}
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_description }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일</a>
+                                                {% endif %}
+                                                
+                                                {% else %}
+                                                {% if message.message_description %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_description }} - {{ message.message_series }}</a>
+                                                {% else %}
+                                                    <a href="{{ message.url }}">{{ message.date | date: "%Y" }}년 {{ message.date | date: "%-m" }}월 {{ message.date | date: "%-d" }}일 - {{ message.message_series }}</a>
+                                                {% endif %}
                                             {% endif %}
                                         {% endif %}
                                     {% endif %}
