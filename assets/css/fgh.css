@@ -118,17 +118,6 @@ hr.event-hr {
     font-family: 'Open Sans', sans-serif;
 }
 
-.map-background {
-    /* height: 100vh; */
-    min-height: 200px;
-    /* opacity: 0.5; */
-    background: url('{{ site.baseurl}}/assets/img/old_flushing_03_1600_800.png') center center no-repeat scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
 .footer-copyright {
     display: flex;
     justify-content: center;

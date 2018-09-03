@@ -1,8 +1,9 @@
 title: Flushing Gospel Hall
 email: flushing.gospel.hall.ny@gmail.com
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://fgh-jekyll-jinho.c9users.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+#url: "https://fgh-jekyll-jinho.c9users.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://flushinggospelhall.org"
 
 languages: ['en', 'ko']
 
@@ -19,7 +20,9 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+    - run.sh
+    - feed.xml
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
