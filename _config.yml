@@ -11,6 +11,8 @@ exclude_from_localizations: ["assets", "favicon.ico"]
 
 permalink: pretty
 
+future: true
+
 # Build settings
 markdown: kramdown
 plugins:
@@ -22,9 +24,12 @@ plugins:
 # to override the default setting.
 exclude:
     - run.sh
-    - feed.xml
-#   - Gemfile
-#   - Gemfile.lock
+    - build.sh
+    - aws.sh
+    - update_childrens_meeting.sh
+    - update_youth_meeting.sh
+    - Gemfile
+    - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
